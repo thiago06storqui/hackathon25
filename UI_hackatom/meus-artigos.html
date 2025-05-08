@@ -71,7 +71,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Gerenciamento de Artigos:</h6>
-                        <a class="collapse-item" href="adicionar-artigo.html">Enviar Artigos</a>
+                        <a class="collapse-item" href="enviar-artigos.html">Enviar Artigos</a>
                         <a class="collapse-item" href="artigos-aprovacao.html">Artigos em Aprovação</a>
                         <a class="collapse-item" href="meus-artigos.html">Meus Artigos </a>
                     </div>
@@ -224,64 +224,55 @@
 
 
 
-
-
-                <div class="container">
-                    <div class="row">
-                      <div class="col-lg-8">
-                        <div class="card mb-4">
-                          <div class="card-header">
-                            Submissão de Artigos
-                          </div>
-                          <div class="card-body">
-                            <form id="article-form" onsubmit="handleSubmit(event)"
-                              style="display: flex; flex-direction: column; gap: 16px;">
-                              
-                              <div>
-                                <label for="title" class="form-label">Título</label>
-                                <input type="text" id="title" name="title" required class="form-control" placeholder="Digite o título do artigo">
-                              </div>
-                  
-                              <div>
-                                <label for="authors" class="form-label">Autores</label>
-                                <input type="text" id="authors" name="authors" required class="form-control" placeholder="Nome dos autores">
-                              </div>
-                  
-                              <div>
-                                <label for="abstract" class="form-label">Resumo</label>
-                                <textarea id="abstract" name="abstract" required class="form-control" placeholder="Resumo do artigo" style="min-height: 100px;"></textarea>
-                              </div>
-                  
-                              <div>
-                                <label for="keywords" class="form-label">Palavras-chave</label>
-                                <input type="text" id="keywords" name="keywords" required class="form-control" placeholder="Ex.: educação, tecnologia, inovação">
-                              </div>
-                  
-                              <div>
-                                <label for="theme" class="form-label">Área temática</label>
-                                <input type="text" id="theme" name="theme" required class="form-control" placeholder="Ex.: Ciências Sociais Aplicadas">
-                              </div>
-                  
-                              <div>
-                                <label for="file" class="form-label">Arquivo PDF</label>
-                                <input type="file" id="file" name="file" accept=".pdf" required class="form-control">
-                              </div>
-                  
-                              <button type="submit" class="btn btn-primary">
-                                Adicionar Artigo
-                              </button>
-                            </form>
-                            <p id="message" class="mt-3"
-                              style="font-size: 14px; color: green; text-align: center; display: none;"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-
-
-
+<!-- meus-artigos.html -->
+<div class="container">
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-header">
+        Meus Artigos Aprovados
+      </div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Data de Aprovação</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Artigo sobre Inteligência Artificial</td>
+                <td>João Silva</td>
+                <td>07/05/2025</td>
+                <td class="text-success">Aprovado</td>
+                <td>
+                  <a href="/uploads/artigo-ia.pdf" target="_blank" class="btn btn-primary">
+                    Visualizar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Guia de Programação em Python</td>
+                <td>João Silva</td>
+                <td>06/05/2025</td>
+                <td class="text-success">Aprovado</td>
+                <td>
+                  <a href="/uploads/guia-python.pdf" target="_blank" class="btn btn-primary">
+                    Visualizar
+                  </a>
+                </td>
+              </tr>
+              <!-- Mais artigos podem ser adicionados aqui -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+       
 
 
                 <!-- AQUI O NEGOCIO ACABA -->

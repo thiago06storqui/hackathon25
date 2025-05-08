@@ -225,62 +225,61 @@
 
 
 
-
                 <div class="container">
-                    <div class="row">
-                      <div class="col-lg-8">
-                        <div class="card mb-4">
-                          <div class="card-header">
-                            Submissão de Artigos
-                          </div>
-                          <div class="card-body">
-                            <form id="article-form" onsubmit="handleSubmit(event)"
-                              style="display: flex; flex-direction: column; gap: 16px;">
-                              
-                              <div>
-                                <label for="title" class="form-label">Título</label>
-                                <input type="text" id="title" name="title" required class="form-control" placeholder="Digite o título do artigo">
-                              </div>
+
+                    <div class="card border-0 shadow rounded-3 my-5">
+                      <div class="card-header bg-white border-bottom fw-semibold fs-5 text-dark">
+                        Artigos Aguardando Aprovação
+                      </div>
                   
-                              <div>
-                                <label for="authors" class="form-label">Autores</label>
-                                <input type="text" id="authors" name="authors" required class="form-control" placeholder="Nome dos autores">
-                              </div>
-                  
-                              <div>
-                                <label for="abstract" class="form-label">Resumo</label>
-                                <textarea id="abstract" name="abstract" required class="form-control" placeholder="Resumo do artigo" style="min-height: 100px;"></textarea>
-                              </div>
-                  
-                              <div>
-                                <label for="keywords" class="form-label">Palavras-chave</label>
-                                <input type="text" id="keywords" name="keywords" required class="form-control" placeholder="Ex.: educação, tecnologia, inovação">
-                              </div>
-                  
-                              <div>
-                                <label for="theme" class="form-label">Área temática</label>
-                                <input type="text" id="theme" name="theme" required class="form-control" placeholder="Ex.: Ciências Sociais Aplicadas">
-                              </div>
-                  
-                              <div>
-                                <label for="file" class="form-label">Arquivo PDF</label>
-                                <input type="file" id="file" name="file" accept=".pdf" required class="form-control">
-                              </div>
-                  
-                              <button type="submit" class="btn btn-primary">
-                                Adicionar Artigo
-                              </button>
-                            </form>
-                            <p id="message" class="mt-3"
-                              style="font-size: 14px; color: green; text-align: center; display: none;"></p>
-                          </div>
+                      <div class="card-body p-0">
+                        <div class="table-responsive">
+                          <table class="table mb-0 align-middle">
+                            <thead class="table-light">
+                              <tr>
+                                <th class="px-4 py-3">Título</th>
+                                <th class="px-4 py-3">Autor</th>
+                                <th class="px-4 py-3">Data de Envio</th>
+                                <th class="px-4 py-3">Status</th>
+                                <th class="px-4 py-3 text-center">Ações</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="px-4 py-3">Artigo sobre Inteligência Artificial</td>
+                                <td class="px-4 py-3">João Silva</td>
+                                <td class="px-4 py-3">07/05/2025</td>
+                                <td class="px-4 py-3 text-warning fw-semibold">Aguardando Aprovação</td>
+                                <td class="px-4 py-3 text-center">
+                                  <a href="#" style="background-color: #4f46e5; color: white; padding: 6px 16px; border: none; border-radius: 6px; text-decoration: none;">Visualizar</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-4 py-3">Guia de Programação em Python</td>
+                                <td class="px-4 py-3">Maria Oliveira</td>
+                                <td class="px-4 py-3">06/05/2025</td>
+                                <td class="px-4 py-3 text-warning fw-semibold">Aguardando Aprovação</td>
+                                <td class="px-4 py-3 text-center">
+                                  <a href="#" style="background-color: #4f46e5; color: white; padding: 6px 16px; border: none; border-radius: 6px; text-decoration: none;">Visualizar</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-4 py-3">Tendências de Tecnologia 2025</td>
+                                <td class="px-4 py-3">Carlos Pereira</td>
+                                <td class="px-4 py-3">05/05/2025</td>
+                                <td class="px-4 py-3 text-warning fw-semibold">Aguardando Aprovação</td>
+                                <td class="px-4 py-3 text-center">
+                                  <a href="#" style="background-color: #4f46e5; color: white; padding: 6px 16px; border: none; border-radius: 6px; text-decoration: none;">Visualizar</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
+                  
                   </div>
                   
-
-
 
 
 
