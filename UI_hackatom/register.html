@@ -60,6 +60,34 @@
                                             id="exampleRepeatPassword" placeholder="Repetir Senha">
                                     </div>
                                 </div>
+                                
+                                <!-- Novo componente: Seleção de tipo de usuário -->
+                                <div class="form-group">
+                                    <div class="card border-left-info shadow py-2 mb-4">
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                        Tipo de Usuário</div>
+                                                    <div class="mt-3">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="tipoAutor" name="tipoUsuario" class="custom-control-input" value="autor" checked>
+                                                            <label class="custom-control-label" for="tipoAutor">Autor</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="tipoCoordenador" name="tipoUsuario" class="custom-control-input" value="coordenador">
+                                                            <label class="custom-control-label" for="tipoCoordenador">Coordenador</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-user-tag fa-2x text-gray-300"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <a href="login.html" class="btn btn-primary btn-user btn-block">
                                     Cadastrar Conta
                                 </a>
